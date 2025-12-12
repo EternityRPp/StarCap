@@ -193,10 +193,11 @@ HTML_TEMPLATE = """
             <div class="captcha-canvas-container" id="captchaContainer">
                 <canvas id="captchaCanvas" width="400" height="400"></canvas>
             </div>
-            <div class="captcha-instruction">Please drag/slide the screen until the hidden character is visible.<br>Release to verify.</div>
+            <div class="captcha-instruction">Drag/Slide to reveal the hidden character. Release to verify.</div>
             <div id="captchaStatus"></div>
             <button class="btn btn-outline" onclick="loadCaptcha()" style="margin-top:15px; width: 400px; font-size: 14px; padding: 10px 0;">Refresh Challenge</button>
             <button class="btn btn-outline" onclick="closeCaptcha()" style="margin-top:10px; width: 400px; font-size: 14px; padding: 10px 0; border-color: #999; color: #666;">Close</button>
+            <div class="provider-text" style="margin-top: 10px; font-size: 12px; color: #999;">The Captcha was provided by 87owo (StarCap).</div>
         </div>
     </div>
     
