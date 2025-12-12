@@ -87,7 +87,7 @@ def verify_captcha():
     target = session['captcha_target']
 
     if not trajectory or len(trajectory) < 2:
-        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: -1)'})
+        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: -1)'}) # No movement
 
     speeds = []
     for i in range(1, len(trajectory)):
@@ -107,22 +107,22 @@ def verify_captcha():
     mid_speed = sum(mid_speed_slice) / len(mid_speed_slice) if mid_speed_slice else 0
     dist = math.sqrt((final_x - target['x'])**2 + (final_y - target['y'])**2)
     total_time = trajectory[-1]['t'] - trajectory[0]['t']
-    print(dist, mid_speed, end_speed, mid_index, total_time)
+    print(dist, sum(speeds) / len(speeds), mid_speed, end_speed, mid_index, total_time)
 
     if dist > 10 and dist <= 20:
-        return jsonify({'status': 'fail', 'msg': 'Not accurate enough (code: 0)'})
+        return jsonify({'status': 'fail', 'msg': 'Not accurate enough (code: 0)'}) # Not accurate enough
     elif dist > 20:
-        return jsonify({'status': 'fail', 'msg': 'Incorrect position (code: 1)'})
+        return jsonify({'status': 'fail', 'msg': 'Incorrect position (code: 1)'}) # Incorrect position
     elif not speeds:
-        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 2)'})
-    elif sum(speeds) / len(speeds) > 1:
-        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 3)'})
+        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 2)'}) # No movement
+    elif sum(speeds) / len(speeds) > 3:
+        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 3)'}) # Too Fast
     elif mid_speed < end_speed: 
-        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 4)'})
+        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 4)'}) # abnormal fluctuations speed
     elif mid_index < 40:
-        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 5)'})
+        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 5)'}) # Too short
     elif total_time < 600:
-        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 6)'})
+        return jsonify({'status': 'fail', 'msg': 'Unnatural movement (code: 6)'}) # Too Fast
 
     session.pop('captcha_target', None)
     return jsonify({'status': 'success', 'msg': f'Verification successful! Character: {target["char"]}'})
