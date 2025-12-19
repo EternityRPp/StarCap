@@ -18,7 +18,7 @@ pip install Pillow
 
 ## Official Website
 
-Open Source Website : https://github.com/87owo/StarCap
+Source Available : https://github.com/87owo/StarCap
 
 ## Project License
 
